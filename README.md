@@ -66,3 +66,15 @@ Then add the following content to the file:
 ```bash
 mvn clean install -s ~/.m2/settings-public.xml
 ```
+
+### Run the application
+
+```bash
+mvn spring-boot:run -s ~/.m2/settings-public.xml
+```
+
+### Verify the application health
+
+```bash
+curl http://localhost:8082/actuator/health
+```
