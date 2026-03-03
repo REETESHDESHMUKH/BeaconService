@@ -78,3 +78,13 @@ mvn spring-boot:run -s ~/.m2/settings-public.xml
 ```bash
 curl http://localhost:8082/actuator/health
 ```
+
+### Miscellaneous
+
+1. To reload application with different xml 
+
+```bash
+1. Intellij settings : cmd + ,
+2. Build, Execution, Deployment -> Build Tools -> Maven
+3. User settings file : /Users/redeshmu/.m2/settings-public.xml
+```
