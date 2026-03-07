@@ -1,5 +1,27 @@
 server:
-  port: 8082
+  port: 8080
 spring:
   application:
     name: beacon
+
+  datasource:
+    url: jdbc:h2:mem:beacondb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+    jpa:
+      hibernate:
+        ddl-auto: create-drop
+      show-sql: true
+
+    # lets you view DB at http://localhost:8082/h2-console
+    h2:
+      console:
+        enabled: true
+
+
+grow:
+  api:
+    base-url: https://api.groww.in/v1/
+    token: "xx"
